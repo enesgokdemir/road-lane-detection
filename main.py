@@ -46,7 +46,7 @@ cap = cv2.VideoCapture("video.mp4")
 frame_width = int(cap.get(cv2.CAP_PROP_FRAME_WIDTH))
 frame_height = int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT))
 fourcc = cv2.VideoWriter_fourcc('D', 'I', 'V', 'X')
-saved_frame = cv2.VideoWriter("lane_detection.avi", fourcc, 30.0, (frame_width, frame_height))
+saved_frame = cv2.VideoWriter("lane_detection.mp4", fourcc, 30.0, (frame_width, frame_height))
 
 while cap.isOpened():
     ret, frame = cap.read()
